@@ -22,6 +22,9 @@ def death(sex,race,ruby_hash_response)
       end
       puts "#{index+1}. #{i["leading_cause"]}\n   Death Rate: #{i["death_rate"]}\n\n"
   end
+  gets.chomp
+  system "clear"
+  puts "\n\n\n🌞  Have a Great Day! 🌞"
 end
 
 user_input(ruby_hash_response)
