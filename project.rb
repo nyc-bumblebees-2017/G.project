@@ -24,7 +24,8 @@ def death(sex,race,ruby_hash_response)
   end
   gets.chomp
   system "clear"
-  puts "\n\n\n🌞  Have a Great Day! 🌞"
+  puts "\n\n\nThis data was provided free of charge by the New York City Department of Health and Mental Hygiene (DOHMH)\n\n"
+  puts "\n\n🌞  Have a Great Day! 🌞\n\n\n"
 end
 
 user_input(ruby_hash_response)
