@@ -44,7 +44,7 @@ def death(sex,race,ruby_hash_response)
       d
     end
   end
-  deaths_from_2013.compact.sort_by {|i| i['death_rate']}.each_with_index {|i, index| puts "#{index+1}. #{i["leading_cause"]}\n   Death Rate: #{i["death_rate"]}\n\n" }
+  deaths_from_2013.compact.sort_by {|i| i['death_rate'].to_f}.reverse.each_with_index {|i, index| puts "#{index+1}. #{i["leading_cause"]}\n   Death Rate: #{i["death_rate"]}\n\n" }
 end
 
 
